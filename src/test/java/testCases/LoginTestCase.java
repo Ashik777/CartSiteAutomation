@@ -13,8 +13,8 @@ public class LoginTestCase extends BaseTestcase {
 	public void logintest()
 	{
 		LoginPage login = new LoginPage(driver);
-		login.enterUsername("ashikbr79@gmail.com");
-		login.enterPassword("Ashik@996170");
+		login.enterUsername(p.getProperty("username"));
+		login.enterPassword(p.getProperty("password"));
 		login.clickLoginButton();
 		MyAccountPage acpage= new MyAccountPage(driver);
 		boolean status1= acpage.checksignoutbutton();
