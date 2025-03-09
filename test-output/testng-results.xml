@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-09T17:59:59 IST" name="Suite" finished-at="2025-03-09T18:00:45 IST" duration-ms="45322">
+  <suite started-at="2025-03-09T18:21:33 IST" name="suite" finished-at="2025-03-09T18:23:39 IST" duration-ms="126102">
     <groups>
     </groups>
-    <test started-at="2025-03-09T17:59:59 IST" name="Test" finished-at="2025-03-09T18:00:45 IST" duration-ms="45322">
+    <test started-at="2025-03-09T18:21:33 IST" name="ChromeTest" finished-at="2025-03-09T18:22:14 IST" duration-ms="41686">
       <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTestCase@490caf5f]" started-at="2025-03-09T17:59:59 IST" name="setup" finished-at="2025-03-09T18:00:24 IST" duration-ms="24308" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T18:21:33 IST" name="setup" finished-at="2025-03-09T18:22:00 IST" duration-ms="27068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@490caf5f]" started-at="2025-03-09T18:00:24 IST" name="logintest" finished-at="2025-03-09T18:00:44 IST" duration-ms="20619" status="PASS">
+        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T18:22:00 IST" name="logintest" finished-at="2025-03-09T18:22:14 IST" duration-ms="14459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@490caf5f]" started-at="2025-03-09T18:00:44 IST" name="tearDown" finished-at="2025-03-09T18:00:45 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T18:22:14 IST" name="tearDown" finished-at="2025-03-09T18:22:14 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-03-09T18:22:15 IST" name="edge test" finished-at="2025-03-09T18:23:39 IST" duration-ms="84206">
+      <class name="testCases.LoginTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T18:22:15 IST" name="setup" finished-at="2025-03-09T18:23:14 IST" duration-ms="59565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T18:23:14 IST" name="logintest" finished-at="2025-03-09T18:23:38 IST" duration-ms="23474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T18:23:38 IST" name="tearDown" finished-at="2025-03-09T18:23:39 IST" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTestCase -->
+    </test> <!-- edge test -->
+  </suite> <!-- suite -->
 </testng-results>
