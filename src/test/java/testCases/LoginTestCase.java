@@ -19,6 +19,7 @@ public class LoginTestCase extends BaseTestcase {
 		MyAccountPage acpage= new MyAccountPage(driver);
 		boolean status1= acpage.checksignoutbutton();
 		Assert.assertEquals(status1, true);
+		acpage.clickSignout();
 		
 		
 	}

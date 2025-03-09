@@ -17,5 +17,9 @@ public class MyAccountPage extends BasePage{
 		boolean status=signout.isDisplayed();
 		return status;
 	}
+	public void clickSignout()
+	{
+		signout.click();
+	}
 
 }
