@@ -1,0 +1,9 @@
+2025-03-10 19:16:55 [main] INFO  Utils - [TestNG] Running:
+  /Users/ashik/Documents/CartSiteAutomation/testng.xml
+
+2025-03-10 19:21:06 [main] INFO  Utils - [TestNG] Running:
+  /Users/ashik/Documents/CartSiteAutomation/testng.xml
+
+2025-03-10 19:21:36 [main] INFO  BaseTestcase - enterd user name and password
+2025-03-10 19:21:45 [main] INFO  BaseTestcase - clicked on the loggin button
+2025-03-10 19:21:47 [main] INFO  BaseTestcase - clicked on signout button

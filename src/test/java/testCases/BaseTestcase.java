@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -16,6 +18,7 @@ import org.testng.annotations.Parameters;
 public class BaseTestcase {
 	WebDriver driver;
 	Properties p;
+	protected static final Logger logger=LogManager.getLogger(BaseTestcase.class);
 	@BeforeMethod
 	@Parameters({"browser"})
 	public void setup(String br) throws IOException
