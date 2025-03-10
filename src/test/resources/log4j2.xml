@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!-- Console Appender: Prints logs to terminal -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+        </Console>
+
+        <!-- Rolling File Appender: Logs and rotates logs -->
+        <RollingFile name="RollingFileLogger" fileName="logs/automation.log"
+                     filePattern="logs/automation-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>  <!-- Rotates file after 10MB -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>  <!-- Rotates daily -->
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger (Applies globally) -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>  <!-- Logs to console -->
+            <AppenderRef ref="RollingFileLogger"/>  <!-- Logs to rolling file -->
+        </Root>
+
+        <!-- Logger for specific test cases -->
+        <Logger name="testCases.BaseTestcase" level="DEBUG" additivity="false">
+            <AppenderRef ref="RollingFileLogger"/>  <!-- Uses rolling file for logs -->
+        </Logger>
+    </Loggers>
+</Configuration>

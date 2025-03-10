@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-09T22:14:17 IST" name="suite" finished-at="2025-03-09T22:16:19 IST" duration-ms="122090">
+  <suite started-at="2025-03-10T19:21:06 IST" name="Suite" finished-at="2025-03-10T19:21:53 IST" duration-ms="46955">
     <groups>
     </groups>
-    <test started-at="2025-03-09T22:14:17 IST" name="ChromeTest" finished-at="2025-03-09T22:15:11 IST" duration-ms="54475">
+    <test started-at="2025-03-10T19:21:06 IST" name="Test" finished-at="2025-03-10T19:21:53 IST" duration-ms="46955">
       <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T22:14:17 IST" name="setup" finished-at="2025-03-09T22:14:47 IST" duration-ms="29968" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTestCase@676cf48]" started-at="2025-03-10T19:21:06 IST" name="setup" finished-at="2025-03-10T19:21:33 IST" duration-ms="27501" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,38 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T22:14:47 IST" name="logintest" finished-at="2025-03-09T22:15:11 IST" duration-ms="24207" status="PASS">
+        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@676cf48]" started-at="2025-03-10T19:21:33 IST" name="logintest" finished-at="2025-03-10T19:21:53 IST" duration-ms="19275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@6a47b187]" started-at="2025-03-09T22:15:11 IST" name="tearDown" finished-at="2025-03-09T22:15:11 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@676cf48]" started-at="2025-03-10T19:21:53 IST" name="tearDown" finished-at="2025-03-10T19:21:53 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2025-03-09T22:15:11 IST" name="edge test" finished-at="2025-03-09T22:16:19 IST" duration-ms="67519">
-      <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T22:15:11 IST" name="setup" finished-at="2025-03-09T22:15:47 IST" duration-ms="35130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logintest()[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T22:15:47 IST" name="logintest" finished-at="2025-03-09T22:16:18 IST" duration-ms="31209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTestCase@71e693fa]" started-at="2025-03-09T22:16:18 IST" name="tearDown" finished-at="2025-03-09T22:16:19 IST" duration-ms="1160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- edge test -->
-  </suite> <!-- suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
